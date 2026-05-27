@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Queenie OK88 Landing</title>
+<title>Thenmis OK88 Landing</title>
 
 <style>
 
@@ -421,7 +421,7 @@ body{
 <div class="profile-card">
 
 <div class="avatar">
-<img src="queenie.jpg">
+<img src="thenmis.jpg">
 </div>
 
 <div class="name">Queenie</div>
@@ -461,7 +461,7 @@ WATCH LIVE HERE
 MALAYSIA
 </div>
 
-<a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="banner-card">
+<a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="banner-card">
 
 <img src="banner.png">
 
@@ -472,7 +472,7 @@ MALAYSIA
 
 </a>
 
-<a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="menu-btn">
+<a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="menu-btn">
 
 <div class="menu-left">
 
@@ -490,7 +490,7 @@ Dep RM50 FREE RM28
 
 </a>
 
-<a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="menu-btn">
+<a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="menu-btn">
 
 <div class="menu-left">
 
@@ -592,7 +592,7 @@ Telegram | 24/7 Support
 SINGAPORE
 </div>
 
-<a href="https://www.ok88sg.net/register?affiliateCode=queeniesg" target="_blank" class="menu-btn">
+<a href="https://www.ok88sg.net/register?affiliateCode=thenmissg" target="_blank" class="menu-btn">
 
 <div class="menu-left">
 
