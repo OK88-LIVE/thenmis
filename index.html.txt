@@ -424,7 +424,7 @@ body{
 <img src="thenmis.jpg">
 </div>
 
-<div class="name">Queenie</div>
+<div class="name">Thenmis</div>
 
 <a href="https://t.me/ok88community" target="_blank" class="live-btn">
 <div class="live-dot"></div>
