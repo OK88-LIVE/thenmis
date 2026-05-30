@@ -6,7 +6,6 @@
 <title>Thenmis OK88 Landing</title>
 
 <style>
-
 *{
   margin:0;
   padding:0;
@@ -26,8 +25,6 @@ body{
   width:100%;
   max-width:420px;
 }
-
-/* PROFILE */
 
 .profile-wrapper{
   position:relative;
@@ -72,8 +69,6 @@ body{
   color:white;
 }
 
-/* LIVE BUTTON */
-
 .live-btn{
   display:inline-flex;
   align-items:center;
@@ -94,15 +89,6 @@ body{
   position:relative;
   overflow:hidden;
   text-decoration:none;
-}
-
-.live-btn:hover{
-  transform:scale(1.05);
-  box-shadow:0 0 28px rgba(96,165,250,.8);
-}
-
-.live-btn:active{
-  transform:scale(.96);
 }
 
 .live-btn::before{
@@ -133,20 +119,9 @@ body{
 }
 
 @keyframes liveGlow{
-  0%{
-    transform:translateY(0px);
-    box-shadow:0 0 18px rgba(96,165,250,.35);
-  }
-
-  50%{
-    transform:translateY(-3px);
-    box-shadow:0 0 30px rgba(96,165,250,.8);
-  }
-
-  100%{
-    transform:translateY(0px);
-    box-shadow:0 0 18px rgba(96,165,250,.35);
-  }
+  0%{transform:translateY(0);box-shadow:0 0 18px rgba(96,165,250,.35);}
+  50%{transform:translateY(-3px);box-shadow:0 0 30px rgba(96,165,250,.8);}
+  100%{transform:translateY(0);box-shadow:0 0 18px rgba(96,165,250,.35);}
 }
 
 @keyframes shine{
@@ -154,15 +129,11 @@ body{
   100%{left:140%;}
 }
 
-/* DIVIDER */
-
 .divider{
   height:1px;
   background:rgba(255,255,255,.08);
   margin:0 0 22px;
 }
-
-/* SOCIAL */
 
 .socials{
   display:flex;
@@ -179,49 +150,15 @@ body{
   align-items:center;
   justify-content:center;
   transition:.25s ease;
-  position:relative;
   overflow:hidden;
   text-decoration:none;
-}
-
-.social:hover{
-  transform:translateY(-2px) scale(1.08);
-  background:rgba(255,255,255,.12);
-  box-shadow:
-    0 0 0 1px rgba(125,211,252,.25),
-    0 0 18px rgba(96,165,250,.35);
-}
-
-.social:active{
-  transform:scale(.92);
-  background:rgba(255,255,255,.16);
-  box-shadow:
-    0 0 0 1px rgba(125,211,252,.4),
-    0 0 12px rgba(96,165,250,.45);
-}
-
-.social::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    135deg,
-    rgba(255,255,255,.18),
-    rgba(255,255,255,0)
-  );
-  opacity:.4;
-  pointer-events:none;
 }
 
 .social img{
   width:18px;
   height:18px;
   object-fit:contain;
-  position:relative;
-  z-index:2;
 }
-
-/* SECTION TITLE */
 
 .section-title{
   display:flex;
@@ -243,8 +180,6 @@ body{
   background:rgba(255,255,255,.15);
 }
 
-/* BANNER */
-
 .banner-card{
   position:relative;
   display:block;
@@ -257,35 +192,6 @@ body{
   margin-bottom:18px;
   text-decoration:none;
   transition:.25s ease;
-}
-
-.banner-card:hover{
-  transform:translateY(-3px) scale(1.01);
-  box-shadow:
-    0 0 0 1px rgba(125,211,252,.25),
-    0 12px 32px rgba(59,130,246,.25),
-    0 0 24px rgba(96,165,250,.18);
-}
-
-.banner-card:active{
-  transform:scale(.98);
-  box-shadow:
-    0 0 0 1px rgba(125,211,252,.35),
-    0 6px 18px rgba(59,130,246,.22),
-    0 0 18px rgba(96,165,250,.22);
-}
-
-.banner-card::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  border-radius:24px;
-  background:linear-gradient(
-    135deg,
-    rgba(255,255,255,.06),
-    rgba(255,255,255,0)
-  );
-  pointer-events:none;
 }
 
 .banner-card img{
@@ -321,8 +227,6 @@ body{
   color:white;
 }
 
-/* MENU */
-
 .menu-btn{
   background:rgba(10,25,55,.78);
   backdrop-filter:blur(12px);
@@ -337,15 +241,6 @@ body{
   box-shadow:0 8px 24px rgba(0,0,0,.22);
   border:1px solid rgba(255,255,255,.06);
   transition:.3s;
-}
-
-.menu-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 0 24px rgba(96,165,250,.25);
-}
-
-.menu-btn:active{
-  transform:scale(.98);
 }
 
 .menu-left{
@@ -385,8 +280,6 @@ body{
   color:#93c5fd;
 }
 
-/* VISIT BUTTON */
-
 .visit-btn{
   margin-top:20px;
   display:block;
@@ -401,14 +294,30 @@ body{
   transition:.3s;
 }
 
-.visit-btn:hover{
-  transform:scale(1.03);
+.footer-links{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  text-align:center;
+  font-size:13px;
+  color:#9fb7ff;
 }
 
-.visit-btn:active{
-  transform:scale(.97);
+.footer-links a{
+  color:#9fb7ff;
+  text-decoration:none;
 }
 
+.footer-links a:hover{
+  color:#ffffff;
+}
+
+.footer-links span{
+  color:#9fb7ff;
+}
 </style>
 </head>
 
@@ -417,7 +326,6 @@ body{
 <div class="container">
 
 <div class="profile-wrapper">
-
 <div class="profile-card">
 
 <div class="avatar">
@@ -434,7 +342,6 @@ WATCH LIVE HERE
 <div class="divider"></div>
 
 <div class="socials">
-
 <a href="https://www.facebook.com/Info.ok88" target="_blank" class="social">
 <img src="facebook.png">
 </a>
@@ -450,182 +357,93 @@ WATCH LIVE HERE
 <a href="https://t.me/ok88community" target="_blank" class="social">
 <img src="telegram.png">
 </a>
-
 </div>
 
 </div>
-
 </div>
 
-<div class="section-title">
-MALAYSIA
-</div>
+<div class="section-title">MALAYSIA</div>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="banner-card">
-
 <img src="banner.png">
-
 <div class="banner-overlay">
 <div class="overlay-label">OK88 EXCLUSIVE</div>
 <div class="overlay-title">Unlock Malaysia Rewards!</div>
 </div>
-
 </a>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="logo.png">
+<div class="menu-icon"><img src="logo.png"></div>
+<div class="menu-text">Dep RM50 FREE 28 Spins</div>
 </div>
-
-<div class="menu-text">
-Dep RM50 FREE 28 Spins
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="logo.png">
+<div class="menu-icon"><img src="logo.png"></div>
+<div class="menu-text">Register Get upto RM128</div>
 </div>
-
-<div class="menu-text">
-Register Get upto RM128
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
-<div class="section-title">
-CLAIM PROMO CODE HERE
-</div>
+<div class="section-title">CLAIM PROMO CODE HERE</div>
 
 <a href="https://t.me/ok88community" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegram-icon.png">
+<div class="menu-icon"><img src="telegram-icon.png"></div>
+<div class="menu-text">Join OK88 Community</div>
 </div>
-
-<div class="menu-text">
-Join OK88 Community
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
 <a href="https://www.facebook.com/groups/1995569360641957" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegram-icon.png">
+<div class="menu-icon"><img src="telegram-icon.png"></div>
+<div class="menu-text">Join OK88 Community</div>
 </div>
-
-<div class="menu-text">
-Join OK88 Community
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
-<div class="section-title">
-OK88 24/7 CS SUPPORT
-</div>
+<div class="section-title">OK88 24/7 CS SUPPORT</div>
 
 <a href="https://wa.link/ok88_my" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="whatsapp.png">
+<div class="menu-icon"><img src="whatsapp.png"></div>
+<div class="menu-text">WA | 24/7 Support</div>
 </div>
-
-<div class="menu-text">
-WA | 24/7 Support
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
 <a href="https://t.me/ok88admin1" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegramcs.png">
+<div class="menu-icon"><img src="telegramcs.png"></div>
+<div class="menu-text">Telegram | 24/7 Support</div>
 </div>
-
-<div class="menu-text">
-Telegram | 24/7 Support
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
-<div class="section-title">
-SINGAPORE
-</div>
+<div class="section-title">SINGAPORE</div>
 
 <a href="https://www.ok88sg.net/register?affiliateCode=thenmissg" target="_blank" class="menu-btn">
-
 <div class="menu-left">
-
-<div class="menu-icon">
-<img src="sg-logo.png">
+<div class="menu-icon"><img src="sg-logo.png"></div>
+<div class="menu-text">Register Get upto SGD88</div>
 </div>
-
-<div class="menu-text">
-Register Get upto SGD88
-</div>
-
-</div>
-
 <div class="arrow">›</div>
-
 </a>
 
-<a href="https://www.ok88vip.com/register?affiliateCode=thenmis/" target="_blank" class="visit-btn">
+<a href="https://www.ok88vip.com/register?affiliateCode=thenmis" target="_blank" class="visit-btn">
 Visit OK88LIVE.COM ↗
 </a>
 
 <div class="footer-links">
-
 <a href="#">Cookie Preferences</a>
-
 <span>•</span>
-
 <a href="#">Report</a>
-
 <span>•</span>
-
 <a href="#">Privacy</a>
-
 </div>
 
 </div>
